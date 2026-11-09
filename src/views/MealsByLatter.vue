@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <!-- حروف البحث -->
+    
     <div class="flex justify-center gap-2 sm:gap-3 mt-4 flex-wrap">
       <button
         v-for="letter in letters"
@@ -18,10 +18,10 @@
       </button>
     </div>
 
-    <!-- عرض الوجبات -->
+  
     <Meals v-if="meals.length" :meals="meals"/>
 
-    <!-- Empty State -->
+    
     <div v-else class="flex flex-col items-center mt-12 sm:mt-16 space-y-4 px-4 sm:px-0">
       <span class="text-5xl sm:text-6xl animate-bounce">🍽️</span>
       <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-purple-700 text-center">

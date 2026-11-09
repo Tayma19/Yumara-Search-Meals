@@ -1,12 +1,12 @@
 <template>
   <div class="px-4 sm:px-8 py-6 max-w-4xl mx-auto">
 
-    <!-- Title -->
+  
     <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-purple-700 text-center">
       Ingredients
     </h1>
 
-    <!-- Search -->
+    
     <div class="pb-0 flex justify-center">
       <div class="w-full max-w-xl relative">
         <input
@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <!-- Ingredients List -->
+   
     <div v-if="computedIngredients.length">
       <router-link
         v-for="ingredient in computedIngredients"
@@ -33,19 +33,19 @@
         class="bg-purple-100 sm:bg-white block rounded-xl p-3 sm:p-4 mb-4 shadow border border-transparent
                hover:border-purple-500 hover:scale-105 hover:shadow-2xl transition-all duration-300 hover:border-2"
       >
-        <!-- Ingredient Name -->
+        
         <h3 class="text-lg sm:text-xl md:text-2xl font-bold mb-2">
           {{ ingredient.strIngredient }}
         </h3>
 
-        <!-- Description -->
+       
         <p class="text-sm sm:text-base text-gray-600 line-clamp-4">
           {{ ingredient.strDescription }}
         </p>
       </router-link>
     </div>
 
-    <!-- Empty State -->
+  
     <div v-else class="flex flex-col items-center mt-12 sm:mt-16 space-y-4 px-4 sm:px-0">
       <span class="text-5xl sm:text-6xl animate-bounce">🥕</span>
 
@@ -69,13 +69,13 @@ import axiosClient from "../axiosClient";
 const keyword = ref("");
 const ingredients = ref([]);
 
-// Fetch ingredients
+
 const fetchIngredients = async () => {
   const { data } = await axiosClient.get("list.php?i=list");
   ingredients.value = data.meals || [];
 };
 
-// Filter ingredients
+
 const computedIngredients = computed(() => {
   if (!keyword.value) return ingredients.value;
 

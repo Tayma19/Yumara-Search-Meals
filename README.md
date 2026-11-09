@@ -1,5 +1,33 @@
-# Vue 3 + Vite
+# Yumara
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Yumara is a simple website that showcases Aat meals with step-by-step preparation instructions and ingredients, all in a clean and easy-to-use interface.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Features
+
+- Browse a collection of Aat meals.
+- View detailed preparation steps for each meal.
+- See the full list of ingredients for every meal.
+- Clean and easy-to-use interface.
+- Fully responsive design.
+
+## Tech Stack
+
+- Vue 3
+- Vite
+- JavaScript
+- CSS
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/Tayma19/Yumara-Search-Meals.git
+cd yumara
+npm install
+npm run dev

@@ -2,7 +2,7 @@
   <div class="p-4 sm:p-8 pb-0 flex justify-center">
     <div class="w-full max-w-xl relative">
 
-      <!-- Search input -->
+      
       <input
         type="text"
         v-model="keyword"
@@ -13,7 +13,7 @@
         @input="searchMeals"
       />
 
-      <!-- Search icon -->
+   
       <span class="absolute left-2 sm:left-3 top-2 sm:top-3 text-gray-400 text-sm sm:text-base">
         🔍
       </span>
@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <!-- Meals list -->
+
   <Meals :meals="meals"/>
 </template>
 

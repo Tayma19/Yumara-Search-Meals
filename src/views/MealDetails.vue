@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-[800px] mx-auto p-4 sm:p-6 md:p-8">
 
-    <!-- Meal title -->
+    
     <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5">
       {{ meal.strMeal }}
     </h1>
@@ -12,7 +12,7 @@
       class="max-w-full rounded-xl mb-5"
     >
 
-    <!-- Meal info -->
+    
     <div class="grid grid-cols-1 sm:grid-cols-3 text-sm sm:text-base md:text-lg py-2 gap-3">
       <div>
         <strong class="font-bold">Category:</strong> {{ meal.strCategory || 'N/A' }}
@@ -25,14 +25,14 @@
       </div>
     </div>
 
-    <!-- Instructions -->
+    
     <div class="my-3 text-sm sm:text-base text-gray-700 leading-relaxed">
       {{ meal.strInstructions }}
     </div>
 
     <div class="grid grid-cols-2 sm:grid-cols-2 gap-6 mt-4">
 
-      <!-- Ingredients -->
+   
       <div>
         <h2 class="text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-purple-700">
           Ingredients
@@ -49,7 +49,7 @@
         </ul>
       </div>
 
-      <!-- Measures -->
+     
       <div>
         <h2 class="text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-purple-700">
           Measures
@@ -68,10 +68,10 @@
 
     </div>
 
-    <!-- Buttons -->
+   
     <div class="mt-6 flex flex-wrap items-center gap-3">
       
-      <!-- YouTube Button -->
+    
       <YouTubeButton
         v-if="meal.strYoutube"
         :href="meal.strYoutube"
@@ -80,7 +80,7 @@
         YouTube
       </YouTubeButton>
 
-      <!-- View Source Button -->
+      
       <a
         v-if="meal.strSource"
         :href="meal.strSource"
